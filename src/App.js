@@ -3,13 +3,15 @@ import './App.css';
 
 // components
 import MyNavbar from "./components/my-navbar/mynavbar.components";
-
+import MyCrousel from "./components/my-crousel/my-crousel.components";
+import TitleMessage from "./components/title-message/title-message";
 
 const App = () => {
   return (
     <div className="App">
       <MyNavbar />
-      My Portfolio
+      <MyCrousel />
+      <TitleMessage />
     </div>
   );
 }
