@@ -10,6 +10,7 @@ import MyNavbar from "./components/my-navbar/mynavbar.components";
 import MyCrousel from "./components/my-crousel/my-crousel.components";
 import TitleMessage from "./components/title-message/title-message";
 import About from "./pages/about/about.components";
+import Skills from "./pages/skills/skills.components";
 
 const App = () => {
   return (
@@ -32,6 +33,13 @@ const App = () => {
           </div>
         </Parallax>
       </div>
+      
+      <div>
+        <Container>
+          <Skills />
+        </Container>
+      </div>
+
       </div>
   );
 }
