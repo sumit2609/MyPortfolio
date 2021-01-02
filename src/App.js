@@ -13,6 +13,7 @@ import TitleMessage from "./components/title-message/title-message";
 import About from "./pages/about/about.components";
 import Skills from "./pages/skills/skills.components";
 import Experience from "./pages/experience/experience.components";
+import ProjectTimeline from "../src/components/projects-timeline/projects-timeline.components";
 
 const App = () => {
   return (
@@ -51,6 +52,15 @@ const App = () => {
           <hr/>
           <Experience />
           </Fade>
+        </Container>
+      </div>
+
+      <div>
+        <Container>
+          <Slide duration={500}>
+          <hr/>
+          <ProjectTimeline />
+          </Slide>
         </Container>
       </div>
 
