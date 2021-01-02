@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 import { Parallax } from 'react-parallax';
 import Container from "react-bootstrap/Container";
 import './App.css';
@@ -11,6 +12,7 @@ import MyCrousel from "./components/my-crousel/my-crousel.components";
 import TitleMessage from "./components/title-message/title-message";
 import About from "./pages/about/about.components";
 import Skills from "./pages/skills/skills.components";
+import Experience from "./pages/experience/experience.components";
 
 const App = () => {
   return (
@@ -36,7 +38,19 @@ const App = () => {
       
       <div>
         <Container>
-          <Skills />
+          <Slide bottom duration={500}>
+            <hr/>
+            <Skills />
+          </Slide>
+        </Container>
+      </div>
+
+      <div>
+        <Container>
+          <Fade duration={500}>
+          <hr/>
+          <Experience />
+          </Fade>
         </Container>
       </div>
 
