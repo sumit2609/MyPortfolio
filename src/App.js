@@ -14,11 +14,19 @@ import About from "./pages/about/about.components";
 import Skills from "./pages/skills/skills.components";
 import Experience from "./pages/experience/experience.components";
 import ProjectTimeline from "../src/components/projects-timeline/projects-timeline.components";
+import Contact from "./pages/contact-form/contact-form.components";
+import Footer from "./components/footer/footer.components";
+import Particles from 'react-particles-js';
+import { ParticleOptions } from "./ParticleOptions";
 
 const App = () => {
   return (
     <div className="App" style={{ position: "relative" }}>
       <MyNavbar />
+      <Particles
+      className="particles particles-box"
+      params={ParticleOptions}
+      />
       <MyCrousel />
       <TitleMessage />
       <div>
@@ -62,6 +70,20 @@ const App = () => {
           <ProjectTimeline />
           </Slide>
         </Container>
+      </div>
+
+      <div>
+        <Container>
+          <Fade duration={500}>
+          <hr/>
+          <Contact />
+          </Fade>
+        </Container>
+      </div>
+
+      <div>
+        <hr/>
+          <Footer />
       </div>
 
       </div>
