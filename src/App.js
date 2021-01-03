@@ -16,17 +16,17 @@ import Experience from "./pages/experience/experience.components";
 import ProjectTimeline from "../src/components/projects-timeline/projects-timeline.components";
 import Contact from "./pages/contact-form/contact-form.components";
 import Footer from "./components/footer/footer.components";
-import Particles from 'react-particles-js';
-import { ParticleOptions } from "./ParticleOptions";
+// import Particles from 'react-particles-js';
+// import { ParticleOptions } from "./ParticleOptions";
 
 const App = () => {
   return (
     <div className="App" style={{ position: "relative" }}>
       <MyNavbar />
-      <Particles
+      {/* <Particles
       className="particles particles-box"
       params={ParticleOptions}
-      />
+      /> */}
       <MyCrousel />
       <TitleMessage />
       <div>
