@@ -56,6 +56,29 @@ const Skills = () => {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
+
+                        {/* backend */}
+
+                        <Card className="focus mt-2 mb-2">
+                            <Card.Body>
+                                <Card.Title className="text-center  card-title">Backend</Card.Title>
+                                <hr />
+                                <Card.Text className="card-text d-flex justify-content-start flex-column">
+                                    {
+                                        skills.backend.map((skills, index) => (
+                                            <spam className="p-2" key={'${skills.skillName}${index}'}>
+                                                <a className="text-dark text-decoration-none" href={skills.link} target="_blank" rel="noopener noreferrer">
+                                                    <Image src={skills.imgSrc} alt={skills.imgAltText} rounded className="image-style m-1"></Image> {skills.skillName}
+                                                </a>
+                                            </spam>
+                                        ))
+                                    }
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+
+                        
+
                     </Col>
 
                         {/* version control */}

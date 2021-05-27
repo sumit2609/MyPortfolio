@@ -8,6 +8,8 @@ import L_JAVASCRIPT from "../../assests/img/skills/javascript.svg";
 import L_C from "../../assests/img/skills/cimg.svg";
 import L_REACT_BOOTSTRAP from "../../assests/img/skills/react-bootstrap.svg";
 import L_STYLED_COMPONENTS from "../../assests/img/skills/styled-components.svg";
+import L_NODEJS from "../../assests/img/skills/nodejs.svg";
+import L_HEROKU from "../../assests/img/skills/heroku.svg";
 
 export const skills = {
     frontend: [
@@ -71,6 +73,15 @@ export const skills = {
         },
     ],
 
+    backend : [
+        {
+            link: "https://en.wikipedia.org/wiki/Node.js",
+            imgAltText: "NodeJs",
+            imgSrc: L_NODEJS,
+            skillName: "NodeJs",
+        },
+    ],
+
     versionControl: [
         {
             link: "https://git-scm.com/",
@@ -86,6 +97,12 @@ export const skills = {
             imgAltText: "GitHub Pages",
             imgSrc: L_GITHUB_PAGES,
             skillName: "GitHub Pages",
+        },
+        {
+            link: "https://en.wikipedia.org/wiki/Heroku",
+            imgAltText: "HEROKU",
+            imgSrc: L_HEROKU,
+            skillName: "HEROKU",
         },
     ],
 };
